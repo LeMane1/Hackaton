@@ -1,0 +1,13 @@
+[Unit]
+Description=vtb huck
+After=network.target
+
+[Service]
+User=root
+Group=www-data
+WorkingDirectory=/home/apps/vtbhack/backend
+ExecStart=make run
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
