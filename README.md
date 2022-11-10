@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# Hackaton
+# Hackaton Team Vaxta
 =======
 <<<<<<< HEAD
 # Hackaton
