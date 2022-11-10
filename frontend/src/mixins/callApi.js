@@ -14,19 +14,21 @@ export default{
                   headers.append('Origin','http://localhost:8000');
                   body = JSON.stringify(data)
               }
+              var resBody;
+
               const res = await fetch(url, {
                 method,
                 headers,
                 body,
               });
               if (res.status === 200 || res.status === 201){
-                var resBody = await res.json();
+                resBody = await res.json();
               }else{
-                var resBody = 'error'
+                resBody = 'error'
               }
               return resBody
             } catch (error) {
-              var resBody = 'error'
+              resBody = 'error'
               return resBody
             }
           },

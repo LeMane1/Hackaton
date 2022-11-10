@@ -21,8 +21,8 @@ Base = declarative_base()
 
 class ItemType(enum.Enum):
     AURC = "AURC"
-    PTC = "PDC"
-    PRC = "PDC"
+    PTC = "PTC"
+    PDC = "PDC"
 
 
 class EventType(enum.Enum):
